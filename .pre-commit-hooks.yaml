@@ -3,3 +3,9 @@
   description: Runs zscanner on supported IaC templates.
   language: script
   entry: scripts/pre-commit-hook.sh  
+
+- id: iac-scanner-pre-commit-py  
+  name: zscanner
+  description: Runs zscanner on supported IaC templates.
+  language: python
+  entry: scripts/pre-commit-hook.py 
