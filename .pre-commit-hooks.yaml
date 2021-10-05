@@ -1,0 +1,5 @@
+- id: iac-scanner-pre-commit   
+  name: zscanner
+  description: Runs zscanner on supported IaC templates.
+  language: script
+  entry: scripts/pre-commit-hook.sh  
