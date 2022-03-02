@@ -8,7 +8,7 @@ import subprocess
 def main(argv: Optional[Sequence[str]] = None) -> int:
     try:
         result = subprocess.run(['zscanner', 'scan', '-d', '.'], stdout=subprocess.PIPE)
-        if result.returncode == 5 or result.returncode == 3 :
+        if result.returncode == 0 or result.returncode == 2 :
             print("Errors found in iac scan")
             scanResults = result.stdout
             print(scanResults.decode('utf-8'))
