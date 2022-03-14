@@ -1,7 +1,7 @@
-- id: iac-scanner-pre-commit 
-  name: zscanner
-  description: Runs zscanner on supported IaC templates.
-  entry: iac-pre-commit-hook
+- id: zscaler-iac-scanner
+  name: runs zscaler iac scanner
+  description: Runs Zscaler IaC Scanner
+  entry: zscaler-iac-scanner
   language: python
   types: [text]
   stages: [commit, push, manual] 
