@@ -5,3 +5,4 @@
   language: python
   types: [text]
   stages: [commit, push, manual] 
+  pass_filenames: false
