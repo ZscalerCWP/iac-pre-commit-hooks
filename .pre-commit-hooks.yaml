@@ -3,3 +3,5 @@
   description: Runs zscanner on supported IaC templates.
   entry: iac-pre-commit-hook
   language: python
+  types: [text]
+  stages: [commit, push, manual] 
